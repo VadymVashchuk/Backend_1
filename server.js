@@ -7,11 +7,12 @@ app.get('/', (req, res) => {
 })
 
 app.get('/data', async (req, res) => {
-  const response = await fetch(`https://jsonplaceholder.typicode.com/todos/${req.query.user}`)
-  const data = await response.json()
-  console.log(data)
+  // const response = await fetch(`https://jsonplaceholder.typicode.com/todos/${req.query.user}`)
+  // const data = await response.json()
+  // console.log(data)
   res.json({
-    "data": data,
+    "data": "test",
+    // "data": data,
   })
 })
 
